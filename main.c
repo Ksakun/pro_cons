@@ -66,7 +66,6 @@ void *producer ( void *v){
 		pthread_mutex_unlock( &mutex);
 		printf("Producer : %d, Data = %d\n", i, buffer[i]);
 	}
-	return NULL;
 }
 
 void *consumer( void *v){
@@ -91,5 +90,4 @@ void *consumer( void *v){
 		pthread_mutex_unlock( &mutex);
 		printf("Consumer : %d, Data = %d\n", i, x);
 	}
-	return NULL;	
 }
